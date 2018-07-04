@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        #image {
+            width: 80%;
+        }
+    </style>
+
+    <h1 id="title">title</h1>
+    <p id="description">short explanation</p>
+    <form action="" id="survey-form">
+        <div>
+            <label for="name" id="name-label">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name">
+        </div>
+        <div>
+            <label for="email" id="email-label">Email:</label>
+            <!-- User Story #6: If I enter an email that is not formatted correctly, I will see an HTML5 validation error. -->
+            <input type="text" type="email" id="email" placeholder="Enter your email">
+        </div>
+        <div>
+            <label for="number" id="number-label">Number:</label>
+            <!-- User Story #8: If I enter non-numbers in the number input, I will see an HTML5 validation error. -->
+            <!-- User Story #9: If I enter numbers outside the range of the number input, I will see an HTML5 validation error. -->
+            <input type="text" id="number" placeholder="Enter your years">
+        </div>
+        <div>
+            <p></p>
+            <select id="dropdown">
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+            </select>
+        </div>
+        <p></p>
+        <input type="radio" name="gender" value="male" checked> Male
+        <br>
+        <input type="radio" name="gender" value="female"> Female
+        <br>
+        <input type="radio" name="gender" value="other"> Other
+        <p></p>
+        <div>
+            <input type="checkbox" name="vehicle" value="Bike" checked> I have a bike
+            <br>
+            <input type="checkbox" name="vehicle" value="Car"> I have a car
+            <br>
+        </div>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <div>
+            <button type="submit" id="submit">Submit</button>
+        </div>
+    </form>
+</body>
+
+</html>
